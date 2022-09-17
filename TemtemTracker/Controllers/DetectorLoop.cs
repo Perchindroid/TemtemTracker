@@ -207,6 +207,7 @@ namespace TemtemTracker.Controllers
                         //Log the encounter in the database
                         DatabaseController.Instance.LogEncounter(results);
                         //Add the encounters to the UI
+                        //IRENE: Aquí empieza la fiesta
                         results.ForEach(result => {
                             //Here we add the detected Temtem to the UI
                             tableController.AddTemtem(result);
